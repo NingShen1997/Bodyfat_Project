@@ -200,8 +200,11 @@ In this project, we explores what factors effect body fat, furthermore, expect t
 
 \begin{frame}
 \frametitle{Data Cleaning: Deal with Influential Data Points}
-In this data set, two clear relationships between variabales are: 1. linear relationship between density and body fat, 2.BMI equation defined relationship between weight, height and adiposity. We check the relationships to find influential points here.
 \begin{itemize}
+\item In this data set, two clear relationships between variabales are: \\
+1) linear relationship between density and body fat, \\
+2) BMI equation defined relationship between weight, height and adiposity. \\
+- We check the relationships to find influential points here.
 \item No.48,96 are considered as influential points due to the Cook's distance plot. Since we are not sure where the error came from, we decided to simply remove these 2 samples.
 \end{itemize}
 \end{frame}
@@ -401,26 +404,23 @@ $$B(\%) = \beta_3*A*W + \beta_2*A (cm) - \beta_1*W (lbs) - \beta_0,$$
 \begin{itemize}
     \item We want to explore the possibility of more than two predictors, we try to add on one body part circumference variables other than ABDOMEN to the current model and check out the R-squared with different additional variables.
     \item  R-square table:
-        \begin{table}[!htbp]
-        \centering
-        \begin{tabular}{ccccc}
-        \hline
+        \begin{center}
+        \begin{tabular}{ccccc}\toprule
         NECK &	CHEST &	HIP &	THIGH &	KNEE \\
         \hline
         0.723 &	0.719 &	0.718 &	0.722 &	0.718 \\
+        \bottomrule
         \end{tabular}
-        \end{table}
         
-        \begin{table}[!htbp]
-        \centering
-        \begin{tabular}{ccccc}
-        \hline
+        \begin{tabular}{ccccc}\toprule
          ANKLE &	BICEPS & FOREARM &	WRIST\\
         \hline
         0.718 &	0.72 &	0.719 &	0.73\\
+        \bottomrule
         \end{tabular}
-        \end{table}
-        
+
+        \end{center}
+       
 
     \item Although adding on WRIST can increase the $R^2$ maximumly, the increment is negligible (0.73 - 0.718 = 0.012).
 \end{itemize}
