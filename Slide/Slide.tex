@@ -248,24 +248,34 @@ In this project, we explores what factors effect body fat, furthermore, expect t
 \begin{frame}
 \frametitle{Statistical Analysis}
 
-\begin{block}{Residual Plot and Cook's Distance Plot}
-
-\begin{figure}
-\begin{minipage}[t]{0.5\linewidth}
-\centering
-\includegraphics[width=2.2in]{residualplot.png}
-\caption{Residual Plot}
-\label{fig:side:a}
-\end{minipage}%
-\begin{minipage}[t]{0.5\linewidth}
-\centering
-\includegraphics[width=2.2in]{cookplot}
-\caption{Cook's Distance}
-\label{fig:side:b}
-\end{minipage}
-\end{figure}
-
+\begin{block}{Model0}
+$$B(\%) = \beta_1*W (lbs) + \beta_0,$$
+where B is the bodyfat percentage (unit: $\%$), and W is the weight (unit: pound).
 \end{block}
+\begin{itemize}
+    \item $R^2$=0.369
+    \item   Summary statistics of the model:
+            \begin{table}
+	        \centering
+        	\begin{tabular}{cccc}  
+	        	\toprule
+	        	& Estimate &	Std. Error &		Pr(\textgreater\abs{t})\\  
+	        	\midrule        %画一条横线
+	        	(Intercept) &	-9.60 &	2.400  &	9.6e-05 \\
+	        	 WEIGHT &	0.16 &	0.013 &		1.6e-26 \\
+	        	\bottomrule
+        	\end{tabular}
+        \end{table}
+\end{itemize}
+
+
+
+
+
+
+
+
+
 \end{frame}
 %------------------------------------------------
 
@@ -302,7 +312,7 @@ NECK &	CHEST &	ABDOMEN &	HIP &	THIGH \\
 \begin{frame}
 \frametitle{Statistical Analysis}
 \begin{block}{Model1}
-$$B(\%) = \beta_2*A (cm) - \beta_1*W (lbs) - \beta_0,$$
+$$B(\%) = \beta_2*A (cm) + \beta_1*W (lbs) + \beta_0,$$
 where B is the bodyfat percentage (unit: $\%$), A is the abdomen circumference (unit: centimeter), and W is the weight (unit: pound).
 \end{block}
 \begin{itemize}
@@ -326,7 +336,7 @@ where B is the bodyfat percentage (unit: $\%$), A is the abdomen circumference (
 \begin{frame}
 \frametitle{Statistical Analysis}
 \begin{block}{Model2}
-$$B(\%) = \beta_3*A*W + \beta_2*A (cm) - \beta_1*W (lbs) - \beta_0,$$
+$$B(\%) = \beta_3*A*W + \beta_2*A (cm) + \beta_1*W (lbs) + \beta_0,$$
 
 \end{block}
 \begin{itemize}
