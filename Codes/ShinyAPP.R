@@ -21,9 +21,6 @@ ui <- fluidPage(
     div(style="display: inline-block;vertical-align:top; width: 70px;",HTML("<br>")),
     div(style="display: inline-block;vertical-align:top; width: 190px;",selectInput(inputId = "abdomenMeasure", label=h3("cm/inches"), choices=c("cm","inches"),selected="cm")),
     
-    
-   
-    
     width=7
   ),
   
