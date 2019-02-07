@@ -20,5 +20,12 @@ The detailed and full process of how we modified the raw dataset and our analysi
 The short edition of our report no longer than 5 pages due to submit requirement.		
 #### ShinyApp.R: 
 It is a R file that generate web claculator for body fat which runs in real time.
+
+### Files in Slide folder	
+
 #### Slide.tex:
 The latex code for generating our presentation slides.
+#### Slide.pdf:
+Our presentation slides.
+#### .png:
+all the plots we used in slides.
