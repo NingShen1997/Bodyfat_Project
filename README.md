@@ -15,7 +15,7 @@ after some modification like deleting some points and recomputing some typos,  a
 ### Files in Codes folder	
 
 #### BodyfatCalculatorDevelopment_Detailed.ipynb: 
-The detailed and full process of how we modified the raw dataset and our analysis of the dataset.		
+The detailed and full process of how we modified the raw dataset and our analysis of the dataset. Important images/figures/tables are all included in this executive jupyter notebook file.
 #### BodyfatCaculatorDevelopment_Summary.ipynb: 
 The short edition of our report no longer than 5 pages due to submit requirement.		
 #### ShinyApp.R: 
