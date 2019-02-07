@@ -29,3 +29,6 @@ The latex code for generating our presentation slides.
 Our presentation slides.
 #### .png:
 all the plots we used in slides.
+
+### Files in Figures folder	
+all the figures we used for analysis in the whole project.
