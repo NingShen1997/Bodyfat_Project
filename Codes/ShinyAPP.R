@@ -38,7 +38,7 @@ server <- function(input, output) {
   x2<-reactive(return(ifelse(input$abdomenMeasure == "inches",FALSE,TRUE)))
   y1<-reactive(if(x1()==FALSE) return(2.2046*input$weight) else return(input$weight))
   y2<-reactive(if(x2()==FALSE) return(2.54*input$abdomen) else return(input$abdomen))
-  z<-reactive(return(-0.1217*y1()+0.8976*y2()-42.2583))
+  z<-reactive(return(round(-0.1217*y1()+0.8976*y2()-42.2583,2)))
   
   output$value = renderText({z()})
 }
